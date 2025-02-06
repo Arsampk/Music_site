@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>WEB222 Music App</title>
+    <link rel="stylesheet" href="./css/water.css" />
+  </head>
+  <body class="signup">
+    <form id="new-artist-form" action="https://httpbin.org/post" method="post">
+      <h1>Adding New Artist</h1>
+      <label for="artist-name">Artist's Name:</label>
+      <input
+        type="text"
+        id="artist-name"
+        name="artistName"
+        required
+        placeholder="Enter artist's name"
+      />
+
+      <label for="genre">Music Genre:</label>
+      <input list="genres" id="genre" name="genre" required placeholder="Choose a music genre" />
+      <datalist id="genres">
+        <option value="Rock"></option>
+        <option value="Pop"></option>
+        <option value="Jazz"></option>
+        <option value="Hip Hop"></option>
+        <option value="Classical"></option>
+        <option value="Electronic"></option>
+        <option value="Country"></option>
+        <option value="Blues"></option>
+        <option value="Reggae"></option>
+        <option value="Soul"></option>
+      </datalist>
+
+      <label for="social-urls">Social Media URLs:</label>
+      <input
+        type="url"
+        id="social-urls"
+        name="socialUrls"
+        required
+        placeholder="Enter social media URLs separated by commas"
+      />
+
+      <label for="song-urls">Song/Video URLs:</label>
+      <div id="song-urls-container">
+        <input
+          type="url"
+          id="song-urls"
+          name="songUrls"
+          required
+          placeholder="Enter a song or video URL"
+        />
+      </div>
+      <button type="button" id="add-song-url">Add More</button>
+
+      <br />
+      <fieldset>
+        <legend>Explicit Lyrics</legend>
+        <div>
+          <input type="checkbox" id="explicit-lyrics" name="explicit" />
+          <label for="explicit-lyrics">Explicit Lyrics</label>
+        </div>
+      </fieldset>
+
+      <br />
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+
+      <br />
+      <button type="submit" class="submit-newsletter">Create</button>
+    </form>
+
+    <button id="back-button" onclick="window.location.href='index.html'">Back</button>
+    <script src="./js/signup.js"></script>
+
+    <script src="./js/signup.js"></script>
+  </body>
+</html>

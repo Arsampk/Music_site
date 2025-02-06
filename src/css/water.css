@@ -1,0 +1,301 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a; /* Dark background for a rock aesthetic */
+  color: #fff; /* White text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333; /* Dark gray header */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #ff4500; /* Orange-red for a punchy headline */
+}
+
+header p {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav#menu {
+  background-color: #444; /* Darker gray for navigation */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+nav#menu button {
+  background-color: #ff4500; /* Vibrant orange-red button */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+nav#menu button:hover {
+  background-color: #ff5733; /* Darker shade of orange-red on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+h2#selected-artist {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  color: #ff4500; /* Same vibrant orange-red for artist name */
+}
+
+#artist-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Rounded corners for the artist image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow for the image */
+}
+
+#artist-links {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#artist-links a {
+  color: #ff4500;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+#artist-links a:hover {
+  color: #ff5733;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #444;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #444;
+}
+
+tbody tr {
+  transition: background-color 0.3s;
+}
+
+tbody tr:hover {
+  background-color: #333;
+}
+
+tbody tr td a {
+  color: #ff4500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+tbody tr td a:hover {
+  color: #ff5733;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ffffff;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+  background-color: #ef721e;
+  color: #000;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+  margin: 16px 0 8px;
+}
+
+.card time,
+.card span {
+  display: block;
+  margin: 8px 0;
+}
+
+footer {
+  background-color: #333; /* Dark gray footer to match the header */
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px; /* Space before the footer */
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #ff4500; /* Vibrant orange-red for links */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ff5733; /* Slightly darker shade on hover */
+}
+/* Base styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #1a1a1a; /* Dark background for a rock aesthetic */
+  color: #fff; /* White text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  max-width: 700px;
+  margin: 20px auto;
+  background-color: #2c2c2c; /* Slightly lighter background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Drop shadow for the form */
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff4500; /* Orange-red for the headline */
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+input[type="text"]::placeholder,
+input[type="url"]::placeholder,
+textarea::placeholder {
+  color: #aaa; /* Light gray for placeholder text */
+}
+
+input[type="url"] {
+  margin-bottom: 0; /* Remove bottom margin for URLs */
+}
+
+button {
+  background-color: #ff4500; /* Vibrant orange-red button */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff5733; /* Darker shade of orange-red on hover */
+}
+
+fieldset {
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+legend {
+  font-size: 1.2em;
+  color: #ff4500;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+#song-urls-container {
+  margin-bottom: 15px;
+}
+
+#add-song-url {
+  display: inline-block;
+  background-color: #ff4500;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  margin: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+#add-song-url:hover {
+  background-color: #ff5733;
+}
+
+/* Back Button */
+#back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff4500; /* Vibrant orange-red for consistency */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+
+#back-button:hover {
+  background-color: #ff5733; /* Darker shade of orange-red on hover */
+}

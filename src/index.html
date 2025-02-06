@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Seyed Arsam Pak Seresht" />
+    <title>WEB222 Music App - Rock and Roll</title>
+    <link rel="stylesheet" href="css/water.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rock and Roll</h1>
+      <p>Unleashing the Power of Rock</p>
+    </header>
+    <nav id="menu"></nav>
+    <hr />
+    <main>
+      <h2 id="selected-artist">Selected Artist:</h2>
+      <img id="artist-image" src="./PICS/monskin.jpeg" alt="Artist Image" />
+      <div id="artist-links"></div>
+      <section id="artist-cards" class="card-container"></section>
+      <div id="song-cards-container" class="card-container"></div>
+      <table>
+        <!--Dynamically create your product rows here -->
+      </table>
+    </main>
+    <script src="js/artists.js"></script>
+    <script src="js/songs.js"></script>
+    <script src="js/app.js"></script>
+    <footer>
+      <div class="newsletter-container">
+        <p class="newsletter-heading">Join our newsletter</p>
+        <p class="newsletter-heading">
+          Sign up to get the latest on sales, new releases and more...
+        </p>
+        <form id="newsletter-form" action="https://httpbin.org/post" method="post">
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            placeholder="Email address"
+            required
+          />
+          <button type="submit" class="newsletter-btn">SIGN UP</button>
+        </form>
+        <p class="footer-credits">&copy; 2024 SenecaCollege</p>
+      </div>
+    </footer>
+  </body>
+</html>
